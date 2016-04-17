@@ -1,0 +1,44 @@
+<ion-view title="Home">
+    <ion-side-menus>
+        <ion-side-menu-content>
+            <ion-header-bar class="bar-positive">
+                <h1 class="title">Tourist Guide</h1>
+                <!--        <button class="button button-clear button-positive" ng-click="redirectToRegistration()">Register</button>   -->
+            </ion-header-bar>
+            <ion-content>
+
+                <div id="div_Home_Container" ng-controller="homeCtrlr" style="margin:auto;">
+
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/Weather-icon.png" class="image_icon image-shape" ng-click="showWeather()">
+                        </div>
+
+                        <div class="col">
+                            <img src="img/currency.png" class="image_icon image-shape" ng-click="Currency()">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/sight-see.png" class="image_icon image-shape" ng-click="Places()">
+
+                        </div>
+                        <div class="col">
+                            <img src="img/hotel-finder-icon.png" class="image_icon image-shape" ng-click="Accomdation()">
+                        </div>
+
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/Restaurant-icon.png" class="image_icon image-shape" ng-click="goToFood()">
+                        </div>
+                    </div>
+                </div>
+
+
+            </ion-content>
+        </ion-side-menu-content>
+    </ion-side-menus>
+</ion-view>

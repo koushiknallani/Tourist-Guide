@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<ion-view title="Weather" cache-view="false" ng-controller="googlemapoutput">
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Weather</h1>
+        <button class="button icon-left ion-home" ng-click="goToHome()">
+            
+        </button>
+    </ion-header-bar>
+    <ion-content padding="true" class="has-header">
+        <form>
+            <div class="list">
+                <div class="item item-input-inset">
+                    <label class="item item-input">
+
+                        <input placeholder="Enter a location" type="search" size="150" id="searchLocation" />
+
+                    </label>
+                    <button type="button" class="button button-icon" ng-click="getWeather()">
+                        <i class="icon ion-search placeholder-icon"></i>
+
+                    </button>
+
+                    <!-- <button type="button"  ng_click="Accomdation()" >Find Accomodation</button>-->
+                </div>
+            </div>
+            <!--
+                        <label class="item item-input">
+                         <input type="search" placeholder="Enter a place" id="searchLocation">
+                            <i class="icon ion-search placeholder-icon" ng-click="getWeather()"></i>
+                        </label>
+            -->
+            <!--            <button class="button button-stable button-block button-shape" >Check Weather</button>-->
+        </form>
+        <div class="row" id="currentWeather" >
+            <iframe id='forecast_embed' width='500' type='text/html' frameborder='0' height='245' src='http://forecast.io/embed/#lat=33.8189&lon=-84.3700&name=Atlanta&color=#00ffff&font=Georgia&units=us'> </iframe></div>
+
+    </ion-content>
+</ion-view>
+

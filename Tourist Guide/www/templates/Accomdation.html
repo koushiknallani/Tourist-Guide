@@ -1,0 +1,32 @@
+<ion-view title="Accommdation" cache-view="false">
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Accommdation</h1>
+        <button class="button icon-left ion-home" ng-click="goToHome()">
+        </button>
+    </ion-header-bar>
+    <ion-content padding="true" class="has-header">
+
+        <div class="list">
+            <div class="item item-input-inset">
+                <label class="item item-input">
+
+                    <input placeholder="Enter a location" type="search" size="150" id="placeInput" />
+
+                </label>
+                <button type="button" class="button button-icon" ng-click="Accomdation()">
+                    <i class="icon ion-search placeholder-icon"></i>
+
+                </button>
+
+                <!-- <button type="button"  ng_click="Accomdation()" >Find Accomodation</button>-->
+            </div>
+        </div>
+        <!--
+                <div  class="row">
+                    <div data-role="main" class="ui-content" id="Accomdation">
+                </div>
+                </div>
+        -->
+        <div id="accomodationMap"> </div>
+    </ion-content>
+</ion-view>

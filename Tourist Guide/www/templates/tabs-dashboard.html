@@ -1,0 +1,26 @@
+<ion-view name="dashboardTabs" cache-view="false">
+    <ion-tabs class="tabs-icon-top tabs-color-active-positive" ng-controller="tabsContrlr">
+        <ion-tab title="Home" icon-off="ion-ios-home" icon-on="ion-ios-home" ng-click="goToHome()">
+
+            <ion-nav-view name="Home"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Weather" icon-off="ion-ios-thunderstorm" icon-on="ion-ios-partlysunny" ng-click="goToWeather()">
+            <ion-nav-view name="Weather"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Currency" icon-off="ion-arrow-swap" icon-on="ion-arrow-swap" ng-click="goToCurrency()">
+            <ion-nav-view name="Currency"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Places" icon-off="ion-android-image" icon-on="ion-android-image" ng-click="goToPlaces()">
+            <ion-nav-view name="Places" cache-view="false"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Accomdation" icon-off="ion-android-pin" icon-on="ion-android-pin" ng-click="goToAccomodation()">
+            <ion-nav-view name="Accomdation" cache-view="false"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Restaurant" icon-off="ion-android-restaurant" icon-on="ion-android-restaurant" ng-click="goToFood()">
+            <ion-nav-view name="Food" cache-view="false"></ion-nav-view>
+
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

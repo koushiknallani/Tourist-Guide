@@ -1,0 +1,28 @@
+<ion-view title="Restaurants" cache-view="false">
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Restaurants</h1>
+        <button class="button icon-left ion-home" ng-click="goToHome()">
+            
+        </button>
+    </ion-header-bar>
+    <ion-content padding="true" class="has-header">
+
+        <div class="list">
+            <div class="item item-input-inset">
+                <label class="item item-input">
+
+                    <input placeholder="Enter a location" type="search" size="150" id="foodInput" />
+
+                </label>
+                <button type="button" class="button button-icon" ng-click="Food()">
+                    <i class="icon ion-search placeholder-icon"></i>
+
+                </button>
+
+                
+            </div>
+        </div>
+       
+        <div id="foodMap"> </div>
+    </ion-content>
+</ion-view>

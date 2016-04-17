@@ -1,0 +1,25 @@
+<ion-view title="Going-Out" ng-controller="Places" cache-view="false">
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Going-Out</h1>
+        <button class="button icon-left ion-home" ng-click="goToHome()">
+            
+        </button>
+    </ion-header-bar>
+    <ion-content padding="true" class="has-header">
+
+        <div class="list">
+            <div class="item item-input-inset">
+                <label class="item item-input">
+                    <input placeholder="Enter a location" type="search" size="150" id="pInput" />
+                </label>
+                <button type="button" class="button button-icon" ng-click="Places($scope)">
+                    <i class="icon ion-search placeholder-icon"></i>
+
+                </button>
+
+                <!-- <button type="button"  ng_click="Places($scope)" >Get Places</button>-->
+            </div>
+        </div>
+        <div id="placesMap"> </div>
+    </ion-content>
+</ion-view>
